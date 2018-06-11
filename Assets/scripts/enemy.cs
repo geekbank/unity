@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class enemy : MonoBehaviour {
-    protected Transform m_trasform;
+    protected Transform m_transform;
     public float m_speed = 1;         //速度
     public float m_life = 1;           //生命
     protected float m_rotspeed = 30;  //旋转速度
@@ -33,7 +33,7 @@ public class enemy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        m_trasform = this.transform;
+        m_transform = this.transform;
         m_renderer = this.GetComponent<Renderer>();  //获得渲染模型组件
 	}
 	private void OnBecameVisible()  //当模型进入屏幕
@@ -54,7 +54,7 @@ public class enemy : MonoBehaviour {
         //左右移动
         float rx = Mathf.Sin(Time.time) * Time.deltaTime;
         //前进
-        m_trasform.Translate(new Vector3(rx, 0, m_speed * Time.deltaTime));
+        m_transform.Translate(new Vector3(rx, 0, m_speed * Time.deltaTime));
 
     }
 }

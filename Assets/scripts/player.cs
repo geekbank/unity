@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour {
     
-    protected Transform m_trasform;
+    protected Transform m_transform;
     public Transform m_rocket;
     public float m_rocketTimer = 0;
     public float m_life = 3;
@@ -25,7 +25,7 @@ public class player : MonoBehaviour {
 	
     // Use this for initialization
 	void Start () {
-        m_trasform = this.transform;
+        m_transform = this.transform;
 	}
 	
     // Update is called once per frame
@@ -55,7 +55,7 @@ public class player : MonoBehaviour {
             moveh -= m_speed * Time.deltaTime;
         }
         //移动
-        this.m_trasform.Translate( new Vector3(moveh, 0, movev));
+        this.m_transform.Translate( new Vector3(moveh, 0, movev));
 
         //子弹发射频率
         m_rocketTimer -= Time.deltaTime;
@@ -66,7 +66,7 @@ public class player : MonoBehaviour {
           //按空格键或鼠标左键发射子弹
           if (Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0)) 
            {
-              Instantiate(m_rocket, m_trasform.position, m_trasform.rotation); //动态创建子弹游戏体
+              Instantiate(m_rocket, m_transform.position, m_transform.rotation); //动态创建子弹游戏体
            }
         }
 
