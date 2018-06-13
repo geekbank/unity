@@ -7,6 +7,19 @@ public class superenemy : MonoBehaviour {
     public float m_speed = 1;         //速度
     public float m_life = 1;           //生命
     protected float m_rotspeed = 30;  //旋转速度
+    public Transform m_rocket;  // 子弹Prefab
+    protected float m_fireTimer = 2;  // 射击计时器
+    protected Transform m_player;  // 主角
+
+    void Awake()
+    {
+        GameObject obj = GameObject.FindGameObjectWithTag("Player"); // 查找主角
+        if (obj != null)
+        {
+            m_player = obj.transform;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag.CompareTo("PlayRocket") == 0)  //如果撞到主角子弹

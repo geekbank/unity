@@ -1,13 +1,20 @@
 ﻿<Properties StartupConfiguration="{C3DA89E1-70C6-7D6C-993E-C8F831D35880}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/enemy2rocket.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/superenemy.cs">
     <Files>
-      <File FileName="Assets/scripts/enemy.cs" Line="6" Column="5" />
-      <File FileName="Assets/scripts/superenemy.cs" Line="21" Column="18" />
-      <File FileName="Assets/scripts/rocket.cs" Line="6" Column="5" />
-      <File FileName="Assets/scripts/player.cs" Line="9" Column="36" />
-      <File FileName="Assets/scripts/enemy2rocket.cs" Line="15" Column="3" />
+      <File FileName="Assets/scripts/enemy.cs" Line="6" Column="5" NotebookId="1" />
+      <File FileName="Assets/scripts/superenemy.cs" Line="18" Column="10" NotebookId="1" />
+      <File FileName="Assets/scripts/rocket.cs" Line="6" Column="5" NotebookId="1" />
+      <File FileName="Assets/scripts/player.cs" Line="9" Column="36" NotebookId="1" />
+      <File FileName="Assets/scripts/enemy2rocket.cs" Line="49" Column="62" NotebookId="1" />
     </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="864" Y="407" Width="884" Height="808">
+        <Files>
+          <File FileName="../../Downloads/Resources/c02_ShootingGame/Assets/Scripts/SuperEnemy.cs" Line="10" Column="5" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
